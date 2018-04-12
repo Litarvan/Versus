@@ -176,6 +176,22 @@ public class GameFootball extends VersusGame
                 this.body.applyLinearImpulse(0, -1, pos.x, pos.y, true);
             }
 
+            if (Gdx.input.isKeyPressed(Keys.LEFT)) {
+                this.body2.applyLinearImpulse(-1, 0, pos.x, pos.y, true);
+            }
+
+            if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
+                this.body2.applyLinearImpulse(1, 0, pos.x, pos.y, true);
+            }
+
+            if (Gdx.input.isKeyPressed(Keys.UP)) {
+                this.body2.applyLinearImpulse(0, 1, pos.x, pos.y, true);
+            }
+
+            if (Gdx.input.isKeyPressed(Keys.DOWN)) {
+                this.body2.applyLinearImpulse(0, -1, pos.x, pos.y, true);
+            }
+
             world.step(step, 6, 2);
             acc -= step;
         }
