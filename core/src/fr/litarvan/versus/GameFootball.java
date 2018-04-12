@@ -80,7 +80,7 @@ public class GameFootball extends VersusGame
 
         bodyDef = new BodyDef();
         bodyDef.type = BodyType.StaticBody;
-        bodyDef.position.set(0, -git stat50);
+        bodyDef.position.set(0, -50);
 
         circle = new PolygonShape();
         circle.setAsBox(Gdx.graphics.getWidth(), 1);
@@ -144,7 +144,7 @@ public class GameFootball extends VersusGame
         ball = world.createBody(bodyDef);
         ball.createFixture(fixtureDef);
 
-        ball.setLinearDamping(0.25f);
+        ball.setLinearDamping(0.5f);
     }
 
     @Override
